@@ -3,6 +3,7 @@ import { StyleSheet, Image,ScrollView } from 'react-native';
 import { Container,Button, Header, View,Content, DeckSwiper, Card, CardItem, Thumbnail, Text,Right, Left, Body, Icon } from 'native-base';
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
+import styles from '../Styles.js';
 
 var cards = [
   {
@@ -83,28 +84,4 @@ class Post extends Component{
         );
    }
 }
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  post:{
-    width:'100%',
-    height:850,
-    backgroundColor: '#f2f2f2',
-  },
-  attachment:{
-    width:'100%',
-    height:400,
-    flex:1
-  },
-  postAttribs:{
-    flex: 1,
-    flexDirection: 'row',
-  },
-  postAttrib:{
-    width:'50%',
-  },
-});
 export default Post;
